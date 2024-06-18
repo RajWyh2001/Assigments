@@ -1,0 +1,11 @@
+<div class="mainbody11">
+    <div class="leftside">
+<app-addtasks></app-addtasks>
+    </div>
+    <div class="rightside">
+        <div  *ngFor="let item of tasks; let i = index" >
+            <app-to-do-list-item [taskItem]="item" (hatao)="RemoveByID(i)"></app-to-do-list-item>
+           </div>
+    </div>
+
+</div>

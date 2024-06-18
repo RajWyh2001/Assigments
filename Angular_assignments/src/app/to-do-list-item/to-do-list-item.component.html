@@ -1,0 +1,19 @@
+
+<table class="table table-striped" style=" border: 1 px red;">
+    <thead>
+      <tr>
+        <th scope="col">Description</th>
+        <th scope="col">Priority</th>
+        <th scope="col">Status</th>
+        <th scope="col">Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+    <td>{{taskItem.desc}}</td>
+    <td>{{taskItem.priority}}</td>
+    <td>{{taskItem.status}}</td>
+    <td><button class="btn btn-danger" (click)="onRemove(taskItem.id)">Remove</button></td>
+</tr>
+</tbody>
+</table>

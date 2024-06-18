@@ -1,0 +1,21 @@
+.navbar{
+    background-color: rgb(115, 110, 110);
+    color: #fdf5f5;
+}
+.navbar-brand,.nav-link{
+    color: white;
+}
+.navText{
+    color:white;
+}
+.nav-link .active{
+    color: #e8e8e8;
+}
+.btn-outline-success{
+    color: #fdf5f5;
+    border: #fdf5f5 ;
+}
+a:hover{
+    background-color: rgb(255, 172, 47);
+    border-radius: 10px;
+}

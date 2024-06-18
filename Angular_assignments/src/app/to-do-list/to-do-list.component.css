@@ -1,0 +1,18 @@
+
+.mainbody11 {
+    height: auto;
+
+    height: 530px;
+    display: flex;
+    flex-direction: row;
+    background: linear-gradient(to bottom right, #669999 0%, #666699 100%);
+    justify-content: center;
+    align-items: center;
+}
+.leftside{
+    margin-right: 200px;
+    background-color :rgb(194, 198, 198) ;
+    height: 200px;
+    width: 350px;
+    border-radius: 15px;
+}

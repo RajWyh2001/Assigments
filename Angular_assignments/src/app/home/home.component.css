@@ -1,0 +1,34 @@
+.mainbody {
+  height: auto;
+
+  height: 530px;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(to bottom right, #669999 0%, #666699 100%);
+  justify-content: center;
+  align-items: center;
+}
+.Containor {
+  width: 400px;
+  margin-top: 10px;
+}
+.contianor2 {
+    margin: 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+.contianor21 {
+  margin: 10px 10px;
+}
+.contaianor22 {
+  margin: 10px 10px;
+}
+
+.card-body {
+  height: 100%;
+  width: 100%;
+}
+li{
+  margin: 10px;
+}

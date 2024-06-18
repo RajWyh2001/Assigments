@@ -1,0 +1,52 @@
+.mainbody1{
+    height: auto;
+
+    height: 530px;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to bottom right, #669999 0%, #666699 100%);
+    justify-content: center;
+    align-items: center;
+}
+.containorMain {
+    display: flex;
+    flex-direction: row;
+}
+.contaniorLeft{
+    border-radius: 20px;
+}
+.contanoirRight{
+    
+}
+input,label{
+    font-size: 10px;
+}
+.cardHead{
+    height: 170px;
+    background-color: #a966e8;
+ border-radius: 20px;
+}
+.cardbody1{
+    height: 210px;
+    background-color:azure;
+border-bottom-left-radius: 20px;
+border-bottom-right-radius: 20px;
+padding: 10px;
+text-align:left;
+}
+.card-body{
+    background-color:antiquewhite;
+    border-radius: 10px;
+}
+img{
+    margin-top: 5%;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin-left: 30%;
+}
+#LabelFortemp{
+    font-size: 13px;
+    margin-top: 10px;
+    font-weight: bolder;
+}

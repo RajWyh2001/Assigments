@@ -1,0 +1,66 @@
+<div class="mainbody">
+  <h4 style="margin-top: 30px; color: aliceblue;"> Operations on object of array [list and table data] </h4>
+  <div class="Containor">
+    <label for="inputtextFName" class="form-label"><b>First Name :</b> </label>
+    <input type="text" id="inputtextFName" class="form-control"  [(ngModel)]="Persons2.Fname"/>
+    <label for="inputtextLName" class="form-label"><b>Last Name :</b></label>
+    <input type="text" id="inputtextLName" class="form-control" [(ngModel)]="Persons2.Lname" />
+    <br />
+    <button type="button" (click)="AddnewItem()" class="btn btn-primary">
+      Add
+    </button>
+    &nbsp;
+    <button type="button" (click)="OnSortFname()" class="btn btn-primary">Sort By First Name</button>
+    &nbsp;
+
+    <button type="button" (click)="OnSortLname()" class="btn btn-primary">Sort By Last Name</button>
+    &nbsp;
+    <br>
+    &nbsp;<input type="text"  style="margin-top: 10px; margin-left: 40px;" placeholder="Search By First Name" [(ngModel)]="filterText">
+    &nbsp;  &nbsp;<button type="button" (click)="filter()" class="btn btn-primary">
+      Search
+    </button>
+   
+  </div>
+  <div class="contianor2">
+    <div class="contianor21">
+      <div class="card" style="width: 25rem">
+        <div class="card-body">
+          <ul>
+            <li *ngFor="let item of Persons; let i = index" >
+              Hello {{item.Fname}} {{item.Lname}}  <button (click)="RemoveItem(i)"  type="button" class="btn btn-danger"> Remove </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="contaianor22">
+      <div class="card" style="width: 25rem">
+        <div class="card-body">
+          <table border="1" style="width: 100%;">
+            <thead style="border: 1px solid grey;">
+              <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style="border: 1px solid grey;" *ngFor="let item of Persons; let i = index">
+                <td >
+                  {{item.Fname}}
+                </td>
+                <td >
+                  {{item.Lname}}
+                </td>
+                <td>
+                  <button  (click)="RemoveItem(i)" class="btn btn-danger"> Remove </button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

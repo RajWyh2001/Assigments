@@ -1,0 +1,96 @@
+<div class="mainbody1">
+  <h4 style="margin-top: 30px; color: aliceblue">Profile Bulider</h4>
+  <div class="containorMain">
+    <div class="contaniorLeft">
+      <div class="card" style="width: 18rem ;border-radius: 10px;">
+        <div class="card-body">
+          <label for="inputtextFName" class="form-label"
+            ><b>First Name :</b>
+          </label>
+          <input
+            (ngModelChange)="fnamechange($event)"
+            type="text"
+            id="inputtextFName"
+            class="form-control"
+            [(ngModel)]="Persons2.Fname"
+          />
+          <label for="inputtextLName" class="form-label"
+            ><b>Last Name :</b>
+          </label>
+          <input
+          (ngModelChange)="Lnamechange($event)"
+            type="text"
+            id="inputtextLName"
+            class="form-control"
+            [(ngModel)]="Persons2.Lname"
+          />
+
+          <label for="inputtextEmilid" class="form-label"
+            ><b>Email id :</b>
+          </label>
+          <input
+          
+          (ngModelChange)="Emialchange($event)"
+            type="text"
+            id="inputtextEmail"
+            class="form-control"
+            [(ngModel)]="Persons2.Emailid"
+          />
+
+          <label for="inputtextMobNo" class="form-label"
+            ><b>Mobile No :</b>
+          </label>
+          <input
+          
+          (ngModelChange)="Mobnochange($event)"
+            type="number"
+            id="inputtextMobno"
+            class="form-control"
+            [(ngModel)]="Persons2.Mobno"
+          />
+
+          <label for="inputtextAdd" class="form-label"><b>Address :</b> </label>
+          <input
+          
+          (ngModelChange)="Addresschange($event)"
+            type="text"
+            id="inputtextAdd"
+            class="form-control"
+            [(ngModel)]="Persons2.Address"
+          />
+
+          <label for="inputtextFName" class="form-label"
+            ><b>Gender :</b> </label
+          ><br />
+          &nbsp;
+          <input  
+          (ngModelChange)="Genderchange($event)" type="radio" id="male"  [(ngModel)]="Persons2.Gender"/>
+            <label for="male">Male</label>  
+          <input  (ngModelChange)="Genderchange($event)"type="radio" id="Female" [(ngModel)]="Persons2.Gender"/>  
+          <label for="Female">Female</label>  
+          
+        </div>
+      </div>
+    </div>
+    <div class="contanoirRight" style="margin-left: 100px;">
+      <div class="card" style="width: 18rem;  border-radius: 20px; 
+    background-color:azure;">
+        <div class="cardHead">
+            <img src="assets\Userimg.jpg" alt="">
+            <h5 style="text-align: center;
+    margin-top: 12px;">{{this.Persons2.Fname}} &nbsp; {{this.Persons2.Lname}}</h5>
+        </div>
+        <div class="cardbody1">
+            <label id ="LabelFortemp" for="email">Email id : </label>
+            {{this.Persons2.Emailid}} <br>
+            <label  id ="LabelFortemp"for="Mobno">Mobile No :</label>
+            {{this.Persons2.Mobno}} <br>
+            <label  id ="LabelFortemp"for="address"> Address: </label>
+            {{this.Persons2.Address}} <br>
+            <label  id ="LabelFortemp"for="Gender"> Gender :</label>
+            {{this.Persons2.Gender}}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
