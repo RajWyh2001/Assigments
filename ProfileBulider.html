@@ -1,0 +1,67 @@
+<style>
+    input {
+        margin-bottom: 6px;
+        ;
+    }
+
+    .maincontainer {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .container {
+        margin-top: 100px;
+    }
+</style>
+<script>
+    function onFirstnamechaneg()
+    {
+         fn = document.getElementById("Fname");
+        fn.innerHTML+=" Rajesh";
+    }
+    
+</script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<body onload style="background-color: rgb(215, 217, 218);">
+    <div class="maincontainer">
+
+        <div class="container">
+            <h2 style="color:black;text-align:center;;  ">Profile Bulider</h2>
+
+            <label for="first">First Name :</label>
+            <input type="text" class="form-control" placeholder="" id="first" name="first" style="width: 80%"  onchange="onFirstnamechaneg()">
+            <!--  col-md-6   -->
+            <label for="last">Last Name :</label>
+            <input type="text" class="form-control" placeholder="" id="last" name="last" style="width: 80%">
+
+            <label for="Mobno">Mobile No:</label>
+            <input type="number" class="form-control" placeholder="" id="Mobno" name="Mobno" style="width: 80%">
+
+            <label for="addess">Address:</label>
+            <input type="text" class="form-control" placeholder="" id="addess" name="addess" style="width: 80%">
+
+            <label for="Pncode">Pncode:</label>
+            <input type="text" class="form-control" placeholder="" id="Pncode" name="Pncode" style="width: 80%">
+            <label for="">Gender : </label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="radio" id="male" name="fav_language" value="Male">
+            <label for="male">Male</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="radio" id="female" name="fav_language" value="Female">
+            <label for="female">Female</label><br>
+            <!--  col-md-6   -->
+
+        
+           
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="Card" ><br>
+                        <h1 id="Fname">helloe</h1>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
